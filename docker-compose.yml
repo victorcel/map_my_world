@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data  # Persistir la base de datos SQLite
+      - ./.env:/app/.env  # Variables de entorno
+    environment:
+      - DATABASE_URL=sqlite:///./data/mapmyworld.db
+    restart: unless-stopped
