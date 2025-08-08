@@ -24,7 +24,7 @@ API de gestión de ubicaciones con autenticación JWT y capacidades de búsqueda
 ### Docker (recomendado)
 ```bash
 git clone git@github.com:victorcel/map_my_world.git
-cd MapMyWorld
+cd map_my_world
 docker-compose up --build
 ```
 
